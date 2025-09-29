@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: red; */
+}
+header h1{
+    color:cadetblue;
+}
+main p{
+    color:brown;
+}
+#celestial{
+    color:blueviolet;
+}
+#hear{
+    color:blue;
+}
+#pure{
+    color:green;
+}
+.crimson{
+    color:crimson;
+}
+.highlight{
+    font-style: italic;
+}
+.standout{
+    color:#f08;
+    font-weight: 800;
+}
