@@ -1,0 +1,27 @@
+
+body{
+    background-color: antiquewhite;
+}
+p,.lessimp{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color:cornflowerblue;
+}
+h1,h2,.moreimp{
+    color:#30734c;
+}
+.important{
+    font-weight: bold;
+}
+.topic{
+    color:#153221;
+}
+.list{
+    color:#3e9361;
+}
+#cr1{
+    color:black;
+}
+#cr2{
+    color:blue;
+}
