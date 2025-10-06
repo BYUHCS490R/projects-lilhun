@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('lightbac.jpeg') repeat  rgb(22, 166, 201);
+}
+header{
+    /* background-image: url('Coconut.png');
+    background-repeat: no-repeat;
+    background-position: bottom right; */
+    background: url('Coconut.png') no-repeat top right ;
+}
+.mylist{
+    list-style-image: url('leaf.png');
+}
