@@ -1,0 +1,26 @@
+
+nav a{
+    color:blue;
+}
+.current{
+    color:black;
+    text-decoration: none;
+}
+.hombac{
+    background: url('imgs/sand.jpeg');
+}
+
+.mylist{
+    list-style-image: url('imgs/wave.png');
+}
+.mainbac{
+    background: url('imgs/lillysurf.png') no-repeat bottom right;
+}
+body{
+    background-color:beige;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h2{
+    color:darkslategray;
+}
