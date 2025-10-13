@@ -1,0 +1,36 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 300px;
+}
+.surf{
+    border: solid black;
+    width: 300px;
+    /* use when you want text to flow around content */
+    float:right
+}
+.surf img{
+    width: 100%;
+}
+.stop{
+    /* makes go down below the float */
+    clear:both;
+}
+.hammer{
+    position: absolute;
+    top:200px;
+    left:100px;
+    z-index: -1;
+    margin:0;
+    display:none
+}
+nav a{
+    /* display:inline-block */
+    display:block;
+    padding:10px;
+    background-color: aqua;
+    border-bottom: thin solid white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
