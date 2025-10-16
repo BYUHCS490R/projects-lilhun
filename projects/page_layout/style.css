@@ -1,0 +1,79 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #A7B0CA;
+    line-height: 24px;
+}
+#wrapper{
+    width: 900px;
+    background-color: white;
+    margin-left: auto;
+    margin-right:auto;
+    /* gets wrapper to contain floats*/
+    overflow: auto;
+}
+.twoset{
+    border: solid black;
+    width:400px;
+    /* takes figure element out of normal flow */
+    float: right;
+}
+.twoset img{
+    width: 100%;
+}
+figcaption{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 16px;
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-transform: uppercase;
+    line-height: 50px;
+    /* letter-spacing: 2px; */
+    font-weight: bold;
+    background-color:#D5DCF9;
+    width:50%;
+    padding:20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px gray;
+}
+nav{
+    width:900px;
+    height:60px;
+    padding:5px;
+    border-top: 1px solid #ECE4B7;
+    border-bottom: 1px solid #ECE4B7;
+    text-align: center;
+    width: 900px;
+    
+}
+nav a{
+    display: inline-block;
+    margin-right: 20px;
+    margin-left:20px;
+    margin-top:7px;
+    margin-bottom:5px;
+    background-color: #ECE4B7;
+    padding:10px;
+    text-align: center;
+    color:black;
+    border-radius: 12px;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+p{
+    padding:10px;
+}
+footer{
+
+    background-image: url(music-notes.jpg);
+    background-origin: initial;
+    background-repeat: repeat-x;
+    background-clip: content-box;
+    font-weight: bold;
+}
