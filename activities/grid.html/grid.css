@@ -1,0 +1,32 @@
+.parent{
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: 33% 33% 33%; */
+    /* takes width and divides it into 3 equal units */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+.child{
+    margin: 10px;
+    background-color:cadetblue
+}
+#wrapper{
+    display: grid;
+    grid-template-areas: 
+        "top top top"
+        "lside middle rside"
+        "bottom bottom bottom"
+    ;
+}
+header{
+    grid-area:top;
+}
+nav{
+    grid-area: rside;
+}
+main{
+    grid-area:middle;
+}
+footer{
+    grid-area: bottom;
+}
