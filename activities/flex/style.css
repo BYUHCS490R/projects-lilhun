@@ -1,0 +1,34 @@
+.card{
+    border: thin solid black;
+    border-radius: 5px;
+    margin:5px;
+    box-shadow: 5px 5px 3px rgba(50,50,50,0.8);
+    width: 150px;
+}
+/* main{
+    display:flex;
+} */
+.row{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mainthing{
+    order: -1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    display:block;
+    padding: 10px;
+    background-color: cadetblue;
+    color:azure;
+    text-decoration: none;
+}
+nav a:hover{
+    color:cadetblue;
+    background-color: azure;
+    text-decoration: underline;
+}
