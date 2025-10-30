@@ -35,7 +35,7 @@ main{
 .row {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: row wrap;
+    flex-wrap: wrap;
 }
 .sidebar{
     width:30%;
