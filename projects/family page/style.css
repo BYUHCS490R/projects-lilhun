@@ -1,0 +1,103 @@
+header{
+    display:flex;
+    justify-content: center;
+    font-family: "Irish Grover", system-ui;
+    font-style: normal;
+    margin:15px;
+    background-image:url(seabac.jpg) ;
+    background-repeat: repeat-x;
+
+}
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #104547;
+    margin-bottom: 10px;
+}
+nav a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding:5px;
+    margin:5px;
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    
+      
+}
+main{
+    display:flex;
+    justify-content: space-evenly;
+    /* background-color:red; */
+    flex-wrap: wrap;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: row wrap;
+}
+.sidebar{
+    width:30%;
+    flex: 0 0 30%;
+    /* background-color: blue; */
+    border-right: 1px dashed black;
+}
+.sidebar img{
+    width: 100%;
+    height:auto;
+    display:block;
+}
+.sidebar figure{
+    margin:0;
+
+}
+article{
+    width:300px;
+    border: solid 1px black;
+    background-color: white;
+    margin:10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    
+}
+article img{
+    width:100%
+}
+article h2{
+    font-family: "Irish Grover", system-ui;
+    text-align: center;
+}
+article p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* what he recomended in class */
+
+
+@media only screen and (max-width: 480px) {
+    /* mobile css */
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: 2;
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 100%;
+        /* max-width: 300px; */
+    }
+}
