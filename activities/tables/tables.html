@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Lilly's website</h1>
+    </header>
+    <!-- don't use tables to latout elements on page -->
+    <main>
+        <h1>Tables</h1>
+        <h2>questions</h2>
+        <p>you use a table when organizing information as an element on your page.</p>
+        <p>Don't use a table to organize elements on your page.</p>
+        <p>You need to do extra work for table accessibility for screen readers to be able to understand the content for blind people.</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="6">fall 2025</th>
+                </tr>
+                <tr>
+                    <!-- th is for screen reader -->
+                    <th>Deaprtment</th>
+                    <th>Number</th>
+                    <th>Title</th>
+                    <th>time</th>
+                    <th>location</th>
+                    <th>credits</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>htdev</td>
+                    <td>100</td>
+                    <td>holokai foundations</td>
+                    <td>8 am</td>
+                    <td>CaC 150</td>
+                    <td>1</td>
+                    
+                </tr>
+                <tr>
+                    <td>Cs</td>
+                    <td rowspan = "2">140</td>
+                    <td>Web design</td>
+                    <td>12 pm</td>
+                    <td>P3</td>
+                    <td>1</td>
+                    
+                </tr>
+                <tr>
+                    <td>Cs</td>
+                    <!-- <td>101</td> -->
+                    <td>intro to coding</td>
+                    <td>1 pm</td>
+                    <td>P3</td>
+                    <td>3</td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>chem</td>
+                    <td>105</td>
+                    <td>general chem</td>
+                    <td>9 pm</td>
+                    <td>mkay 130</td>
+                    <td>3</td>
+                    
+                </tr>
+                <tr>
+                    <td>eng</td>
+                    <td>101</td>
+                    <td>intro to english</td>
+                    <td>10 am</td>
+                    <td>mkay 100</td>
+                    <td>1</td>
+                    
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" id="total-credits">total credits</th>
+                    <td headers="total-credits">9</td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lilly Hunter</p>
+    </footer>
+</body>
+</html>
