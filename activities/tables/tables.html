@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -16,7 +17,10 @@
         <p>you use a table when organizing information as an element on your page.</p>
         <p>Don't use a table to organize elements on your page.</p>
         <p>You need to do extra work for table accessibility for screen readers to be able to understand the content for blind people.</p>
-        <table border="1">
+        <h2>questions</h2>
+        <p>We don't use the border attribute because it is not current HTML.</p>
+        <p>You can target specific elements with a CSS pseudo class.To select all the even rows in a table you can use tr:nth(even).</p>
+        <table class="schedule">
             <thead>
                 <tr>
                     <th colspan="6">fall 2025</th>
@@ -44,14 +48,14 @@
                 </tr>
                 <tr>
                     <td>Cs</td>
-                    <td rowspan = "2">140</td>
+                    <td rowspan = "2" class="num">140</td>
                     <td>Web design</td>
                     <td>12 pm</td>
                     <td>P3</td>
                     <td>1</td>
                     
                 </tr>
-                <tr>
+                <tr class="grayish">
                     <td>Cs</td>
                     <!-- <td>101</td> -->
                     <td>intro to coding</td>
@@ -70,7 +74,7 @@
                     <td>3</td>
                     
                 </tr>
-                <tr>
+                <tr class="grayish">
                     <td>eng</td>
                     <td>101</td>
                     <td>intro to english</td>
