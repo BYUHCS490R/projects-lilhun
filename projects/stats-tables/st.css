@@ -1,0 +1,84 @@
+header{
+    color: #E1D6B6;
+    text-align: center;
+    padding:10px;
+    background-image:url(vines.jpeg) ;
+    background-repeat: repeat-x;
+}
+main{
+    display:flex;
+    justify-content: space-between;
+    /* background-color: red; */
+   
+}
+.page{
+   
+    background-color: beige;
+    margin:auto;
+    
+}
+.sidebar{
+    width:30%;
+    text-align: center;
+    border-left: 5px dashed black;
+    background-color:#49475B;
+    min-height: 100%;
+}
+.sidebar img{
+    width:100%;
+}
+.sidepar p{
+    background-color: #C7B8EA;
+}
+
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #BFADA3;
+    margin-bottom: 10px;
+    border: 3px solid #504746;
+}
+nav a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding:5px;
+    margin:5px;
+    border: 3px solid #504746;
+    
+      
+}
+.kalandra{
+    width:800px;
+    border:5px solid black;
+    border-style: outset;
+    border-collapse: collapse;
+}
+.kalandra thead .title{
+    padding:5px;
+    background-color:#98745A;
+}
+.kalandra tbody tr:nth-child(odd){
+   
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.kalandra thead tr{
+    background-color: #0F7173;
+    color:white;
+    padding:10px;
+    border-bottom:2px solid black;
+}
+.kalandra thead th{
+    padding:10px;
+}
+
+.kalandra tbody td{
+   border:1px solid black;
+   padding:5px;
+}
+footer{
+    color:white;
+    background-image:url(vines.jpeg) ;
+    background-repeat: repeat-x;
+}
