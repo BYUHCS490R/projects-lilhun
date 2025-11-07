@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>forms</h1>
+    </header>
+   
+    <main>
+        <h1>forms</h1>
+        <h2>questions</h2>
+        <p>The action tag tells the form were to send the data when the user submits it.</p>
+        <p>the method teg tells the browser how to send data to the server.</p>
+        <p>Get forms are usued for retreiving information like searches. The data is availible in the search bar. Post is used for sending and updating information. The data is not visible in the URL</p>
+        
+        <p></p>
+        <!-- post changes something add, delete, update -->
+         <!-- get is for reading or just veiwing ex: google searches -->
+        <form action="formprocess.html" method="post">
+            <div>
+                <label for="full-name">Full Name:</label>
+                First Name:<input type="text"name="fname" placeholder="full name">
+            </div>
+           <div>
+                <label for="email">Email:</label>
+                <input type="email"name="fname" value="your@gmail.com">
+           </div>
+           <div>
+                <label for="pass">Password:</label>
+                <input type="password" name="pass">
+           </div>
+           <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank">---</option>
+                    <option value="CA">California</option>
+                    <option value="CA">California</option>
+                    <option value="CA">California</option>
+                </select>
+           </div>
+           <div>
+            <label>
+                <input type="checkbox" name="agree"> I agree to the terms</label>
+           </div>
+           <div>
+                gender:
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+           </div>
+           <div>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments">Hello World</textarea>
+           </div>
+           <input type="submit" value="Sign Up">
+            
+            
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lilly Hunter</p>
+    </footer>
+    
+</body>
+</html>
