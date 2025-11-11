@@ -17,46 +17,56 @@
         <p>The action tag tells the form were to send the data when the user submits it.</p>
         <p>the method teg tells the browser how to send data to the server.</p>
         <p>Get forms are usued for retreiving information like searches. The data is availible in the search bar. Post is used for sending and updating information. The data is not visible in the URL</p>
-        
-        <p></p>
+        <h2>Day 2</h2>
+        <p>you can customize the layout using flexbox or grid. You can also use css to space out elements and apply coloring.</p>
+        <p>Using flexbox means that less code has to be written in the media query to convert ot mobile layout.</p>
         <!-- post changes something add, delete, update -->
          <!-- get is for reading or just veiwing ex: google searches -->
         <form action="formprocess.html" method="post">
-            <div>
-                <label for="full-name">Full Name:</label>
-                First Name:<input type="text"name="fname" placeholder="full name">
-            </div>
-           <div>
-                <label for="email">Email:</label>
-                <input type="email"name="fname" value="your@gmail.com">
-           </div>
-           <div>
-                <label for="pass">Password:</label>
-                <input type="password" name="pass">
-           </div>
-           <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank">---</option>
-                    <option value="CA">California</option>
-                    <option value="CA">California</option>
-                    <option value="CA">California</option>
-                </select>
-           </div>
-           <div>
-            <label>
-                <input type="checkbox" name="agree"> I agree to the terms</label>
-           </div>
-           <div>
-                gender:
-                <label><input type="radio" name="gender" value="male">Male</label>
-                <label><input type="radio" name="gender" value="female">Female</label>
-           </div>
-           <div>
-            <label for="comments">Comments</label>
-            <textarea name="comments" id="comments">Hello World</textarea>
-           </div>
-           <input type="submit" value="Sign Up">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text"name="fname" placeholder="full name">
+                </div>
+               <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email"name="fname">
+               </div>
+               <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass">
+               </div>
+               <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="CA">California</option>
+                        <option value="CA">California</option>
+                        <option value="CA">California</option>
+                    </select>
+               </div>
+               <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree"> I agree to the terms</label>
+               </div>
+               <div class="check-row">
+                    <div class="spacer"></div>
+                    gender:
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+               </div>
+               <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments">Hello World</textarea>
+               </div>
+               <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+               </div>
+            </fieldset>
+           
+           
             
             
         </form>

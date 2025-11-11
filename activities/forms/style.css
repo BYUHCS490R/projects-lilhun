@@ -1,0 +1,48 @@
+.form-row,.check-row{
+    display:flex;
+    gap: 10px;
+    /* 2nd value controlls margin left and right */
+    margin: 15px 0;
+}
+.form-row label{
+    width: 150px;
+    text-align:right;
+}
+.form-row input:not([type='submit']),.form-row select,.form-row textarea{
+    background-color: rgb(247, 236, 203);
+    padding: 5px 10px;
+}
+.form-row input:not([type='submit']):focus,.form-row select:focus,.form-row textarea:focus{
+    background-color: white;
+    padding: 5px 10px;
+} 
+.form-row input[type='submit']{
+    padding: 5px 10px;
+}
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+
+fieldset{
+    background-color: rgb(209, 209, 246);
+    width: 80%;
+    margin: auto; 
+}
+legend{
+    border: 1px solid black;
+    background-color: rgb(50, 50, 152);
+    color: white;
+    padding: 20px;
+}
+@media ONLY screen AND (max-width:480px){
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    fieldset{
+        width: 100%;
+    }
+    .form-row label, .spacer{
+        text-align: left;
+    }
+}
