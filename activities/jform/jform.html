@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form action="formprocess.html" method="post" id="myForm">
+           
+            First Name:<input type="text" id="firstName" name="first" placeholder="First Name"><br>
+            Last Name:<input type="text" id="lastName" name="last" placeholder="Last Name"><br>
+            Password:<input type="password" id="password" name="pass">
+            Age: <input type="number" name="age" id="age">
+            Class:
+                <input type="radio" value="freshmen">freshmen<br>
+                <input type="radio" value="sophmore">sophmore<br>
+                <input type="radio" value="junior">junior<br>
+                <input type="radio" value="senior">senior<br>
+            State: <select name="state" id="state">
+                <option value="blank">---</option>
+                <option value="CA">Hawaii</option>
+                <option value="CA">California</option>
+                <option value="CA">Oregon</option>
+            </select><br>
+            <input type="submit"> 
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lilly Hunter</p>
+    </footer>
+    <script>
+        document.getElementById("myForm").addEventListener("submit",function(event){
+            event.preventDefault();
+            alert("Hello");
+        });
+    </script>
+</body>
+</html>
