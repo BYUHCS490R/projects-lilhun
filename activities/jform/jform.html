@@ -41,7 +41,7 @@
     </footer>
     <script>
         document.getElementById("myForm").addEventListener("submit",function(event){
-         
+            event.preventDefault();
             const first = document.getElementById("firstName").value;
             const last = document.getElementById("lastName").value;
             const age = document.getElementById("age").value;
