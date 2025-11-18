@@ -15,7 +15,10 @@
         <p>Javascript can be run in the browser and on the server.</p>
         <p>In the past jQuery was the most popular fron-end library.</p>
         <p>React is the most popular javascript front-end library today.</p>
-        <p></p>
+        <h2>Day 2 questions</h2>
+        <p>AJAX (Asynchronous JavaScript and XML) allows webpages to update without reloading. It does this by sending requests to a server and updating the webpage in real time based on the server’s response.</p>
+        <p>We store Javascript in a seperate file so thigs will be more organized and so javascript isn't mixed in with html.</p>
+        <div id="message"></div>
         <form action="processing.html" method="post" id="myForm">
            
             First Name:<input type="text" id="firstName" name="first" placeholder="First Name"><br>
@@ -39,29 +42,6 @@
     <footer>
         <p>&copy; 2025 Lilly Hunter</p>
     </footer>
-    <script>
-        document.getElementById("myForm").addEventListener("submit",function(event){
-            event.preventDefault();
-            const first = document.getElementById("firstName").value;
-            const last = document.getElementById("lastName").value;
-            const age = document.getElementById("age").value;
-
-            if(!first|| !last){
-                alert("Please provide your full name.");
-                return;
-            }
-            if(!age|| age < 18 ){
-                alert("you must be 18 years or older to submit this form.");
-                return;
-            }
-
-            const data = {
-                firstName: first,
-                lastName: last,
-                age: age
-            }
-            console.log(data);
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
