@@ -37,7 +37,7 @@ document.getElementById("pform").addEventListener("submit",function(event){
             console.log("AJAX success");
             const response = JSON.parse(xhr.responseText);
             console.log(response);
-            document.getElementById('pForm').innerHTML = '';
+            document.getElementById('pform').innerHTML = '';
             document.getElementById('message').innerText = response.message;
         } else if (xhr.readyState === 4){
             console.log("AJAX error", xhr.status);
@@ -45,5 +45,5 @@ document.getElementById("pform").addEventListener("submit",function(event){
         }
     };
 
-    xhr.send(); // no need to send JSON for a GET request
+    xhr.send(JSON.stringify(data));
 });
