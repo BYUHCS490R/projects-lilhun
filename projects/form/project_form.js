@@ -1,6 +1,6 @@
 document.getElementById("pform").addEventListener("submit",function(event){
     event.preventDefault();
-    console.log("Hello");
+    console.log("bruh");
     const name = document.getElementById("fname").value;
     const pass = document.getElementById("pass").value;
     const age = document.getElementById("age").value;
@@ -26,12 +26,15 @@ document.getElementById("pform").addEventListener("submit",function(event){
         agree: agree.checked
     }
     console.log(data);
-      const xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
+    console.log("1");
     // submit.json=fake server response
     //getting data from the data object in form.js
     //javascript processes data ajax only retrives response
     //json is a data fromat for sending and storing information
     xhr.open("Get", "submit.json",true);
+    console.log("1");
+
     //this is a http header but dosen't matter for this assignment because we are requestiong a local json file and not sending data to a server that reads headers.
     xhr.setRequestHeader("content-Type","application/json;charset=UTF-8");
     console.log("1");
