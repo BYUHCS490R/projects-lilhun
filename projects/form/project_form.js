@@ -1,6 +1,6 @@
 document.getElementById("pform").addEventListener("submit",function(event){
     event.preventDefault();
-    console.log("bruh");
+    console.log("test");
     const name = document.getElementById("fname").value;
     const pass = document.getElementById("pass").value;
     const age = document.getElementById("age").value;
