@@ -1,4 +1,4 @@
-document.getElementById("pForm").addEventListener("submit",function(event){
+document.getElementById("pform").addEventListener("submit",function(event){
     event.preventDefault();
     console.log("Hello");
     const name = document.getElementById("fname").value;
