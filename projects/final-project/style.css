@@ -1,0 +1,124 @@
+
+
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:30px;
+    margin-bottom: 10px;
+}
+nav a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding:5px;
+    margin:5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400px;
+    font-style: normal;
+    
+      
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 25px;    /* makes corners round */
+  border: 1px solid #ccc;
+  width: 350px;
+  
+
+  padding:8px;
+}
+.search input{
+    border:none;
+    
+}
+header{
+    background-image: url("homepage_img.jpg");
+    background-size: cover;
+    background-position: center;
+    height:400px;
+}
+header h1{
+    /* color: #344966; */
+    font-family: 'Cormorant Garamond', serif;
+    color:#132845;
+     margin: 0; /* prevents breaking the header */
+    padding-top: 30px; /* moves text downward */
+    padding-left: 30px; /* moves text horizontally */
+}
+main{
+    padding:20px;
+    background-color:#7C8463;
+}
+h2{
+    font-family: 'Cormorant Garamond', serif;
+    color:#132845;
+    
+}
+.content{
+    background-color: white;
+    width:95%;
+    margin:auto;
+    padding:20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+article{
+    width:300px;
+    border: solid 1px black;
+    border-radius: 15px;
+    overflow: hidden; 
+    background-color: white;
+    margin:10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    
+}
+article img{
+    max-height: 300px;
+    width:100%
+}
+article h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left:20px;
+    font-weight: 800px;;
+}
+article p{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+/* what he recomended in class */
+
+
+@media only screen and (max-width: 480px) {
+    /* mobile css */
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: 2;
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 100%;
+        /* max-width: 300px; */
+    }
+}
