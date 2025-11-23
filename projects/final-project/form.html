@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journry through Irenland</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+         
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="#">Dublin</a>
+            <a href="#">Kilkenny</a>
+            <a href="#">Iconic sites</a>
+            <a href="#">Scenic Drive</a>
+            <a href="inten.html" class="current">Itenerary</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div> 
+        
+    </nav>
+    <main class="form_main">
+        <div id="message"></div>
+        <form action="formprocess.html" method="post" id="pform">
+            <fieldset>
+                <legend> Build Your Perfect Trip</legend>
+                <!-- <div class="form-row">
+                    <label for="full-name"></label> Name:</label>
+                    <input type="text"name="fname" placeholder="name">
+                </div> -->
+                <div class="form-row">
+                    <label for="fname">Name:</label>
+                    <input type="text"name="fname" placeholder="Name" id="fname">
+                </div>
+                 <div class="form-row">
+                    <label for="fname">Age:</label>
+                    <input type="number" name="age" id="age">
+                </div>
+                 
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="test">
+                </div>
+                <div class="form-row">
+                    <label for="full-name">Birthday:</label>
+                    <input type="date"name="bday">
+                </div>
+               
+               <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+               </div>
+               <div class="form-row">
+                    <label for="com">Comments:</label>
+                    <textarea name="com" id="com" placeholder="Leave a comment!"></textarea>
+                </div>
+               <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="CA">Hawaii</option>
+                        <option value="CA">California</option>
+                        <option value="CA">Oregon</option>
+                    </select>
+               </div>
+               <div class="check-row">
+                    
+                    <label for="gen">Gender:</label>
+                    <!-- <div class="spacer"></div> -->
+                    <label class="radio-feild"><input type="radio" name="gender" value="male"class="rad">Male</label>
+                    <label class="radio-feild"><input type="radio" name="gender" value="female"class="rad">Female</label>
+                </div>
+               <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree"> I agree to the terms</label>
+               </div>
+               
+               
+               <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Submit" class="submit">
+               </div>
+            </fieldset>
+           
+           
+            
+            
+        </form>
+        <a href="index.html" class="home_button">Back to home</a>
+    </main>
+    <script src="project_form.js"></script>
+</body>
+</html>
