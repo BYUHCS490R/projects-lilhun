@@ -51,6 +51,20 @@ header{
 .index_head{
     background-image: url("imgs/homepage_img.jpg"); 
 }
+.dublin_head{
+    background-image: url("imgs/dublin_header.jpg"); 
+}
+.kilkenny_head{
+    background-image: url("imgs/kilkenny_header.jpg"); 
+}
+.iconic_sites_head{
+    background-image: url("imgs/Iconic_header.jpg"); 
+}
+.scenic_drive_head{
+    background-image: url("imgs/kerry_header.jpg");
+}
+
+
 .iten_h1{
     font-family: 'Cormorant Garamond', serif;
     color:#132845;
@@ -92,7 +106,7 @@ h2{
     margin:auto;
     padding:20px;
 }
-
+/* card code */
 .row {
     display: flex;
     justify-content: space-evenly;
@@ -121,6 +135,11 @@ article h2{
 article p{
     margin-left: 15px;
     margin-right: 5px;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit; 
+    display: block; 
 }
 .Itenerary{
     width:800px;
