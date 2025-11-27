@@ -1,7 +1,7 @@
 
 
 
-nav{
+nav,.iten_nav{
     display:flex;
     justify-content: space-between;
     padding:30px;
@@ -91,7 +91,7 @@ main{
 .iten_main,.form_main{
     background-image: url(imgs/fox.png);
     background-color: white;
-    height:800px;
+    /* height:800px; */
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -111,6 +111,7 @@ h2{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 article{
@@ -206,33 +207,6 @@ article p{
 }
 
 
-@media only screen and (max-width: 480px) {
-    /* mobile css */
-    nav {
-        flex-direction: column;
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        order: 2;
-        width: 100%;
-    }
-
-    .row {
-        width: 100%;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    article {
-        width: 100%;
-        /* max-width: 300px; */
-    }
-}
 /* form code */
 .form-row,.check-row{
     display:flex;
@@ -314,15 +288,116 @@ legend{
     background-color: #E3C584;
     
 }
-@media ONLY screen AND (max-width:480px){
+@media only screen and (max-width: 480px){
+    /* mobile css */
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .search {
+        order: -1;
+        margin-bottom: 10px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    nav,.iten_nav{
+        flex-direction: column;
+      
+    }
+    .iten_nav{
+        margin-bottom: 0;
+        padding-bottom: 0; 
+    }
+    nav a{
+        border: 1px solid #7C8463;
+        text-align: center;
+        border-radius: 5px; 
+        
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    main {
+       
+        align-items: flex-start;
+        
+    }
+    .card-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sidebar {
+        order: 2;
+        width: 100%;
+    }
+
+    .row {
+       
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+       
+        width: 300px;  /* avoid going too large */
+        margin: 10px 0;
+        height: auto;      /* prevent overflow stretching */
+    }
+
+    article img {
+        width: 100%;
+        height: 300px;
+        
+    }
+    .Itenerary {
+        margin:auto;
+        width:90%;
+    }
+    
+    .iten_main,
+    .form_main {
+        background-image: none;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0px;
+
+
+    }
+    .iten_main{
+        margin-top: 30px;
+    }
     .form-row, .check-row{
         flex-direction: column;
     }
-    fieldset{
-        width: 100%;
-    }
-    .form-row label, .spacer{
+    
+    .form-row label{
         text-align: left;
     }
+    form,fieldset {
+        width: 90%;      /* or 100% */
+        max-width: 500px;
+    }
     
+    #button {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .submit {
+        width: 100%;
+        max-width: 250px;
+    }
+    .spacer{
+        flex: 1;
+    }
+     
 }
