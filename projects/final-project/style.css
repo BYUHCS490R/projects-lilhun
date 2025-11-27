@@ -95,6 +95,31 @@ main{
     background-repeat: no-repeat;
     background-position: right;
 }
+/* test code */
+/* wrapper for message + image */
+#content_wrapper {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* message on left, image on right */
+    gap: 20px;
+    width: 80%;
+    max-width: 900px;
+}
+
+
+/* message box */
+
+/* .no-bg {
+    background-image: none !important;
+} */
+#sub_image{
+    display:none;
+    height: auto;          /* maintain aspect ratio */
+    margin: 0;             /* remove any margin */
+    padding: 0;            /* remove any padding */
+    object-fit: cover; 
+}
 h2{
     font-family: 'Cormorant Garamond', serif;
     color:#132845;
@@ -214,14 +239,27 @@ article p{
     /* 2nd value controlls margin left and right */
     margin: 15px 0;
 }
+.feild-label{
+    font-weight: bold;
+}
 .rad{
     width: 15px;
     text-align:right;
 }
+.radio_group {
+    background-color:#FDF0D5;
+    padding:5px;
+    border-radius: 8px;
+    border:1px solid black;     
+    display: flex;
+    flex-direction: column;  /* stack vertically */
+    gap: 8px;                /* space between each option */
+    margin-left: 10px;       /* optional, indent from label */
+}
 .check-row label.radio-feild {
     display:flex;
     justify-content: flex-start;
-    width: 90px;
+    width: auto;
     text-align: right;
 }
 .check-row label {
@@ -368,10 +406,20 @@ legend{
         align-items: center;
         padding:0px;
 
-
     }
     .iten_main{
         margin-top: 30px;
+    }
+    /* form stuff */
+    #sub_image {
+        display: none !important;
+    }
+    #content_wrapper{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
     .form-row, .check-row{
         flex-direction: column;

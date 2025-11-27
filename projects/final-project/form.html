@@ -27,56 +27,68 @@
         
     </nav>
     <main class="form_main">
-        <div id="message"></div>
+        <div id="content_wrapper">
+            <div id="message"></div>
+            <img src="imgs/fox.png" id="sub_image" alt="fox">
+            
+        </div>
+        
+       
         <form action="#" method="post" id="pform">
             <fieldset>
                 <legend> Build Your Perfect Trip</legend>
-                <!-- <div class="form-row">
-                    <label for="full-name"></label> Name:</label>
-                    <input type="text"name="fname" placeholder="name">
-                </div> -->
+                
                 <div class="form-row">
-                    <label for="fname">Name:</label>
+                    <label for="fname" class="feild-label">Name:</label>
                     <input type="text"name="fname" placeholder="Name" id="fname">
                 </div>
-                 <div class="form-row">
-                    <label for="fname">Age:</label>
-                    <input type="number" name="age" id="age">
-                </div>
-                 
                 <div class="form-row">
-                    <label for="email">Email:</label>
+                    <label for="email" class="feild-label">Email:</label>
                     <input type="email" name="test">
                 </div>
                 <div class="form-row">
-                    <label for="full-name">Birthday:</label>
-                    <input type="date"name="bday">
+                    <label for="fname" class="feild-label">Trip Duration(days):</label>
+                    <input type="number" name="trip_dur" id="trip_dur" placeholder="Enter a number">
                 </div>
-               
-               <div class="form-row">
-                    <label for="pass">Password:</label>
-                    <input type="password" name="pass" id="pass">
-               </div>
-               <div class="form-row">
-                    <label for="com">Comments:</label>
-                    <textarea name="com" id="com" placeholder="Leave a comment!"></textarea>
-                </div>
-               <div class="form-row">
-                    <label for="state">State:</label>
-                    <select name="state" id="state">
+                <div class="form-row">
+                    <label for="toy" class="feild-label">Time of year:</label>
+                    <select name="toy" id="toy">
                         <option value="blank">---</option>
-                        <option value="CA">Hawaii</option>
-                        <option value="CA">California</option>
-                        <option value="CA">Oregon</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
                     </select>
                </div>
-               <div class="check-row">
+                <div class="check-row">
                     
-                    <label for="gen">Gender:</label>
-                    <!-- <div class="spacer"></div> -->
-                    <label class="radio-feild"><input type="radio" name="gender" value="male"class="rad">Male</label>
-                    <label class="radio-feild"><input type="radio" name="gender" value="female"class="rad">Female</label>
+                    <label for="style" class="feild-label">Prefered travel style:</label>
+                    <div class="radio_group">
+                        <label class="radio-feild"><input type="radio" name="style" value="a"class="adventure">adventure</label>
+                        <label class="radio-feild"><input type="radio" name="style" value="female"class="scenic">scenic</label>
+                        <label class="radio-feild"><input type="radio" name="style" value="female"class="relaxed">relaxed</label>
+                        <label class="radio-feild"><input type="radio" name="style" value="female"class="cultural">cultural</label>
+                    </div>
+                    
                 </div>
+                <div class="check-row">
+                    
+                    <label for="pref" class="feild-label">What activities do you like?</label>
+                    <div class="radio_group">
+                        <label class="radio-feild"><input type="radio" name="pref" value="a"class="op1">Sightseeing & historic sites</label>
+                        <label class="radio-feild"><input type="radio" name="pref" value="female"class="op2">Museums & Music</label>
+                        <label class="radio-feild"><input type="radio" name="pref" value="female"class="op3">Hiking & outdoor adventures</label>
+                        <label class="radio-feild"><input type="radio" name="pref" value="female"class="op4">Food & restaurants</label>
+                        <label class="radio-feild"><input type="radio" name="pref" value="female"class="op4">Beaches & coastal drives</label>
+                    </div>
+                    
+                </div>
+               <div class="form-row">
+                    <label for="com" class="feild-label">Comments:</label>
+                    <textarea name="com" id="com" placeholder="Leave a comment!"></textarea>
+                </div>
+               
+               
                <div class="check-row">
                     <div class="spacer"></div>
                     <label><input type="checkbox" name="agree" id="agree"> I agree to the terms</label>
