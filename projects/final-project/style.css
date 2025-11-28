@@ -49,19 +49,19 @@ header{
     height:400px;
 }
 .index_head{
-    background-image: url("imgs/homepage_img.jpg"); 
+    background-image: url("imgs/index/homepage_img.jpg"); 
 }
 .dublin_head{
-    background-image: url("imgs/dublin_header.jpg"); 
+    background-image: url("imgs/dublin/dublin_header.jpg"); 
 }
 .kilkenny_head{
-    background-image: url("imgs/kilkenny_header.jpg"); 
+    background-image: url("imgs/kilkenny/kilkenny_header.jpg"); 
 }
 .iconic_sites_head{
-    background-image: url("imgs/Iconic_header.jpg"); 
+    background-image: url("imgs/iconic-sites/Iconic_header.jpg"); 
 }
 .scenic_drive_head{
-    background-image: url("imgs/kerry_header.jpg");
+    background-image: url("imgs/kerry/kerry_header.jpg");
 }
 
 
@@ -76,6 +76,7 @@ header{
     background-color:#7C8463;
     height:100px;
 }
+/* main stuff */
 header h1{
     /* color: #344966; */
     font-family: 'Cormorant Garamond', serif;
@@ -87,6 +88,29 @@ header h1{
 main{
     padding:20px;
     background-color:#7C8463;
+}
+.map{
+    float: right;          /* Image goes to the right */
+    width: 300px; 
+}
+.monument{
+    float: right;          /* Image goes to the right */
+    
+}
+/* .container {
+    display: flex;
+    align-items: stretch;
+} */
+.divider {
+    border-top: 2px solid black;
+    margin-top:50px;
+    margin-bottom:50px;
+    height: 100%;
+    clear: both;   
+}
+
+.learn{
+    margin-top: 20px;
 }
 .iten_main,.form_main{
     background-image: url(imgs/fox.png);
@@ -125,6 +149,12 @@ h2{
     color:#132845;
     
 }
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 18px;
+    color:black;
+
+}
 .content{
     background-color: white;
     width:95%;
@@ -138,6 +168,9 @@ h2{
     flex-wrap: wrap;
     align-items: center;
 }
+/* figure img{
+    width:300px;
+} */
 
 article{
     width:300px;
@@ -378,6 +411,23 @@ legend{
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+    /* imgs on pages */
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        margin: 20px 0;
+    }
+    
+    .video-wrapper iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
     }
 
     article {
