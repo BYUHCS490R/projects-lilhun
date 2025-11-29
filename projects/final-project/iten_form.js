@@ -3,15 +3,30 @@ document.getElementById("pform").addEventListener("submit",function(event){
     console.log("test");
     const name = document.getElementById("fname").value;
     // const pass = document.getElementById("pass").value;
+    const email = document.getElementById("email").value;
+    const style = document.getElementById("style").value;
+    const pref = document.getElementById("pref").value;
     const duration = document.getElementById("trip_dur").value;
     const agree = document.getElementById("agree");
 
     if(!name){
-        alert("Please provide your full name.");
+        alert("Please provide your name.");
         return;
     }
-    if(!duration|| duration < 18 ){
-        alert("you must be 18 years or older to submit this form.");
+    // if(!email){
+    //     alert("Please provide your email adress.");
+    //     return;
+    // }
+    // if(!style){
+    //     alert("Please select an option.");
+    //     return;
+    // }
+    // if(!pref){
+    //     alert("Please select an option.");
+    //     return;
+    // }
+    if(!duration|| duration < 1 ){
+        alert("you must at least one day.");
         return;
     }
   

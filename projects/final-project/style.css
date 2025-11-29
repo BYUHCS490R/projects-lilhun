@@ -7,6 +7,9 @@ nav,.iten_nav{
     padding:30px;
     margin-bottom: 10px;
 }
+.iten-text{
+    width:50%;
+}
 nav a{
     background-color: white;
     color: black;
@@ -89,6 +92,9 @@ main{
     padding:20px;
     background-color:#7C8463;
 }
+.source{
+    font-size: 10px;
+}
 .map{
     float: right;          /* Image goes to the right */
     width: 300px; 
@@ -97,6 +103,14 @@ main{
     float: right;          /* Image goes to the right */
     
 }
+.stuff{
+    display: flex;
+    justify-content: center;
+}
+/* .stone-circle{
+    margin-top: 130px;
+    float: right;
+} */
 /* .container {
     display: flex;
     align-items: stretch;
@@ -117,7 +131,7 @@ main{
     background-color: white;
     /* height:800px; */
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right top;
 }
 /* test code */
 /* wrapper for message + image */
@@ -207,7 +221,7 @@ article p{
     border: 2px solid #555;
     border-style: outset;
     border-collapse: collapse;
-    margin-top: 150px; 
+    /* margin-top: 150px;  */
     width: 70%;
     padding: 10px;
     border-radius: 8px;
@@ -395,6 +409,9 @@ legend{
         align-items: flex-start;
         
     }
+    .stuff{
+        display: block;
+    }
     .card-link {
         display: flex;
         justify-content: center;
@@ -458,7 +475,7 @@ legend{
 
     }
     .iten_main{
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
     /* form stuff */
     #sub_image {
