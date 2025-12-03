@@ -2,10 +2,11 @@ document.getElementById("pform").addEventListener("submit",function(event){
     event.preventDefault();
     console.log("test");
     const name = document.getElementById("fname").value;
-    // const pass = document.getElementById("pass").value;
+    
     const email = document.getElementById("email").value;
-    const style = document.getElementById("style").value;
-    const pref = document.getElementById("pref").value;
+    const season = document.getElementById("season").value;
+    const style = document.querySelector('input[name="style"]:checked');
+    const pref = document.querySelector('input[name="pref"]:checked');
     const duration = document.getElementById("trip_dur").value;
     const agree = document.getElementById("agree");
 
@@ -13,25 +14,29 @@ document.getElementById("pform").addEventListener("submit",function(event){
         alert("Please provide your name.");
         return;
     }
-    // if(!email){
-    //     alert("Please provide your email adress.");
-    //     return;
-    // }
-    // if(!style){
-    //     alert("Please select an option.");
-    //     return;
-    // }
-    // if(!pref){
-    //     alert("Please select an option.");
-    //     return;
-    // }
+    if(!email){
+        alert("Please provide your email adress.");
+        return;
+    }
+    if (season === "blank") {
+        alert("Please select a time of year.");
+        return;
+    }
+    if(!style){
+        alert("Please select an option.");
+        return;
+    }
+    if(!pref){
+        alert("Please select an option.");
+        return;
+    }
     if(!duration|| duration < 1 ){
-        alert("you must at least one day.");
+        alert("You must have at least one day planned.");
         return;
     }
   
     if(!agree.checked){
-        alert("you must agree to the terms to submit this form.");
+        alert("You must agree to the terms to submit this form.");
         return;
     }
     const data = {
