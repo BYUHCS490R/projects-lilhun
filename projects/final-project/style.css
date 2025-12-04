@@ -10,6 +10,9 @@ nav,.iten_nav{
 .iten-text{
     width:50%;
 }
+.fa-rotate-by {
+    transform: rotate(var(--fa-rotate-angle, 0deg)) !important;
+}
 nav a{
     background-color: white;
     color: black;
