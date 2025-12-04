@@ -339,6 +339,9 @@ article p{
         width: auto;        /* removes fixed label width */
     }
 }
+iframe {
+    border: none;
+}
 .form-row label{
     width: 150px;
     text-align:right;
